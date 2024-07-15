@@ -1,14 +1,11 @@
-try {
-    Write-Output "Starting dependency installation..."
+# install_dependencies.ps1
 
-    # Example installation commands
-    npm install
-    # Add other dependency installation commands as needed
+# Ensure PowerShell treats any error as a terminating error
+$ErrorActionPreference = "Stop"
 
-    Write-Output "Dependencies installed successfully"
-} catch {
-    Write-Error "Dependency installation failed: $_"
-    exit 1
-}
+Write-Host "Starting dependency installation..."
 
-exit 0
+# Install dependencies
+npm install --force
+
+Write-Host "Dependencies installed successfully"
