@@ -34,9 +34,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# content layer
 .contentlayer
 
-/public/robots.txt
-/public/sitemap.xml
-/public/sitemap-0.xml
-
+# public files (if you need to ignore these, make sure it's intentional)
+# /public/robots.txt
+# /public/sitemap.xml
+# /public/sitemap-0.xml
